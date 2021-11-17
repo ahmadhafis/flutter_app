@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/screens/categories.dart';
 
 class Register extends StatelessWidget {
   const Register({
@@ -49,7 +50,9 @@ class Register extends StatelessWidget {
                         ),
                     ),
                     ElevatedButton(
-                        onPressed: () => print("Register Clicked"),
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/categories');
+                        },
                         child: Text('Register'),
                         style: ElevatedButton.styleFrom(
                           minimumSize: Size(double.infinity, 36),
